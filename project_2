@@ -1,0 +1,34 @@
+import random
+
+item=["rock","paper","scissor"]
+
+user_choice=input("Enter your move (rock ,paper,scissor)=")
+
+
+comp_choice=random.choice(item)
+
+print(f"your choice is {user_choice} and computer choice is {comp_choice}")
+
+
+if user_choice==comp_choice:
+    print("both choose same move .So match is tie" )
+elif user_choice=="rock":
+    if comp_choice=="paper":
+        print("paper cover rock .computer win")
+    else:
+        print("rock break scissor.user wim")
+elif user_choice=="paper":
+    if comp_choice=="rock":
+        print("paper covers rock .user win")
+    else :
+        print("scissor cuts paper .computer win")
+elif user_choice=="scissor":
+    if comp_choice=="rock":
+        print("rock break scissor. computer win ")
+    else:
+        print("scissor cuts paper user win")
+else:
+    print("invalid move ")
+
+
+
